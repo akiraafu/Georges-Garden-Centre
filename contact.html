@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./images/icon3.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Georges Garden Centre</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      data-bs-theme="dark"
+      style="background-color: #386641"
+    >
+      <div class="container-fluid">
+        <a
+          href="/"
+          class="navbar-brand col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <img
+            style="max-width: 100px"
+            src="/images/georges-garden-centre-low-resolution-logo-color-on-transparent-background.png"
+            alt="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="onlineshop.html" class="nav-link">SHOP</a>
+            <a href="videos.html" class="nav-link">VIDEOS</a>
+            <a href="contact.html" class="nav-link active" aria-current="page"
+              >CONTACT US</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="container">
+      <div class="row p-5 m-5 align-items-center">
+        <h2 class="col pe-3 fs-4 border-end text-end">
+          Bringing beauty to<br />
+          <span style="color: #bc4749"><em> your backyard</em></span>
+        </h2>
+        <p class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          neque porro at sunt repellendus! Porro deleniti deserunt, ab sapiente
+          nisi cidunt laudantium omnis iste!
+        </p>
+      </div>
+      <div class="row p-5">
+        <div
+          class="contact-info col align-items-start d-flex flex-column p-5"
+          style="width: 50%"
+        >
+          <h2 class="fw-bold">Get in Touch</h2>
+          <p class="mb-5">Bringing beauty to your backyard today</p>
+          <div class="contact-email mb-4">
+            <h5 class="fw-bold">Email</h5>
+            <p>george@GeorgesGardenCentre.com</p>
+          </div>
+          <div class="contact-social mb-3">
+            <h5 class="fw-bold">Socials</h5>
+            <p>Instagram</p>
+            <p>Twitter</p>
+            <p>Facebook</p>
+          </div>
+        </div>
+
+        <div
+          class="contact-form col border m-5 d-flex align-items-center justify-content-center"
+        >
+          <form>
+            <div class="row g-2 my-3">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                  aria-label="First name"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                  aria-label="Last name"
+                />
+              </div>
+            </div>
+            <div>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your Email Address"
+              />
+            </div>
+            <div>
+              <label for="categories" class="form-label"></label>
+              <div class="input-group">
+                <span class="input-group-text">Choose a category</span>
+                <select id="categories" name="categories" class="form-select">
+                  <option selected>Choose...</option>
+                  <option value="plants">Plants</option>
+                  <option value="pots">Pots</option>
+                  <option value="gifts">Gifts</option>
+                  <option value="gardenTools">Garden tools</option>
+                  <option value="fertilisers">Fertilisers</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label
+                for="exampleFormControlTextarea1"
+                class="form-label"
+              ></label>
+              <textarea
+                class="form-control"
+                placeholder="Message"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top"
+      style="background-color: #f2e8cf"
+    >
+      <p class="col-md-4 mb-0 text-muted">© Georges Garden Centre, 2023.</p>
+
+      <a
+        href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+      >
+        <img
+          style="max-width: 100px"
+          src="/images/georges-garden-centre-low-resolution-logo-color-on-transparent-background.png"
+          alt=""
+        />
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link px-2 text-muted">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="onlineshop.html" class="nav-link px-2 text-muted">SHOP</a>
+        </li>
+        <li class="nav-item">
+          <a href="videos.html" class="nav-link px-2 text-muted">VIDEOS</a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="contact.html"
+            class="nav-link active px-2 text-muted"
+            aria-current="page"
+            >CONTACT US</a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
