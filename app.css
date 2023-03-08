@@ -253,7 +253,6 @@ nav li a {
 }
 .feature-content img {
   display: block;
-  width: 33.33vw;
   margin: auto;
   object-fit: cover;
   z-index: -1;

@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --darkbrown: #386641;
   --mediumbrown: #6a994e;
@@ -76,7 +82,7 @@ nav {
 
 .feature-content img {
   display: block;
-  width: 33.33vw;
+  /* width: 33.33vw; */
   margin: auto;
   object-fit: cover;
   z-index: -1;
@@ -100,11 +106,12 @@ nav {
   font-size: 1rem;
   font-weight: 500;
 }
+
 .feature-content .col div p {
   color: var(--darkbrown);
 }
 
-.location .pb-5 {
+.location .py-5 {
   background-color: var(--lightgreen);
 }
 
