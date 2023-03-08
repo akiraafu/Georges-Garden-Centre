@@ -19,88 +19,148 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>Georges Garden Centre</title>
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <nav class="nav nav-subpages">
-      <a href="index.html" class="logo">Georges Garden Centre</a>
-      <div class="menu-icon">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      data-bs-theme="dark"
+      style="background-color: #386641"
+    >
+      <div class="container-fluid">
+        <a
+          href="/"
+          class="navbar-brand col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <img
+            style="max-width: 100px"
+            src="/images/georges-garden-centre-low-resolution-logo-color-on-transparent-background.png"
+            alt="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="onlineshop.html" class="nav-link">SHOP</a>
+            <a href="videos.html" class="nav-link active" aria-current="page"
+              >VIDEOS</a
+            >
+            <a href="contact.html" class="nav-link">CONTACT</a>
+          </div>
+        </div>
       </div>
-      <ul class="nav-menu navbar">
-        <li><a href="index.html" class="nav-link">HOME</a></li>
-        <li><a href="onlineshop.html" class="nav-link">SHOP</a></li>
-        <li><a href="videos.html" class="nav-link">VIDEOS</a></li>
-        <li><a href="contact.html" class="nav-link">CONTACT US</a></li>
-      </ul>
     </nav>
-
-    <h3 class="heading">video gallery</h3>
-    <div class="videosContainer">
-      <div class="main-video">
-        <div class="video">
-          <video src="./images/vid-1.mp4" controls muted autoplay></video>
-          <h3 class="title">01. video title goes here</h3>
-        </div>
+    <div class="container">
+      <div class="row p-5 m-5 align-items-center">
+        <h2 class="col pe-3 fs-4 border-end text-end">
+          Plant your dreams and<br />
+          <span style="color: #bc4749"><em>Watch them grow</em></span>
+        </h2>
+        <p class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          neque porro at sunt repellendus! Porro deleniti deserunt, ab sapiente
+          nisi cidunt laudantium omnis iste!
+        </p>
       </div>
-      <div class="video-list">
-        <div class="vid active">
-          <video src="./images/vid-1.mp4" muted></video>
-          <h3 class="title">01. video title goes here</h3>
-        </div>
-        <div class="vid">
-          <video src="./images/vid-2.mp4" muted></video>
-          <h3 class="title">02. video title goes here</h3>
-        </div>
-        <div class="vid">
-          <video src="./images/vid-3.mp4" muted></video>
-          <h3 class="title">03. video title goes here</h3>
-        </div>
-        <div class="vid">
-          <video src="./images/vid-4.mp4" muted></video>
-          <h3 class="title">04. video title goes here</h3>
-        </div>
-        <div class="vid">
-          <video src="./images/vid-5.mp4" muted></video>
-          <h3 class="title">05. video title goes here</h3>
-        </div>
-        <div class="vid">
-          <video src="./images/vid-6.mp4" muted></video>
-          <h3 class="title">06. video title goes here</h3>
-        </div>
-        <div class="vid">
-          <video src="./images/vid-7.mp4" muted></video>
-          <h3 class="title">07. video title goes here</h3>
+
+      <div class="container mb-5">
+        <div class="row">
+          <div
+            class="video col d-flex flex-column justify-content-center align-items-center"
+          >
+            <iframe
+              class="responsive-iframe"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/XD7rtmgjE_g"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4 class="text-center mt-3">
+              Garden of Roses and Perennials 2022
+            </h4>
+          </div>
+          <div
+            class="video col d-flex flex-column justify-content-center align-items-center"
+          >
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/NKhyO3nHQDA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+
+            <h4 class="text-center mt-3">DIY Garden</h4>
+          </div>
         </div>
       </div>
     </div>
 
-    <footer class="footer">
-      <div class="row">
-        <div class="col d-flex">
-          <h4>INFORMATION</h4>
-          <a href="">About Us</a>
-          <a href="">Contact Us</a>
-          <a href="">Shipping Guide</a>
-        </div>
-        <div class="col d-flex">
-          <h4>USEFUL LINK</h4>
-          <a href="https://www.amazon.com.au/">Online Store</a>
-          <a href="">Customer Service</a>
-          <a href="">Promotion</a>
-        </div>
-        <div class="col d-flex social">
-          <a href="#"><i class="bx bxl-facebook-square"></i></a>
-          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-          <a href="#"><i class="bx bxl-snapchat"></i></a>
-          <a href="#"><i class="bx bxl-amazon"></i></a>
-        </div>
-      </div>
-      <p>&copy; 2023 Georges Garden Centre. All rights reserved.</p>
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top"
+      style="background-color: #f2e8cf"
+    >
+      <p class="col-md-4 mb-0 text-muted">© Georges Garden Centre, 2023.</p>
+
+      <a
+        href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+      >
+        <img
+          style="max-width: 100px"
+          src="/images/georges-garden-centre-low-resolution-logo-color-on-transparent-background.png"
+          alt=""
+        />
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link px-2 text-muted">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="onlineshop.html" class="nav-link px-2 text-muted">SHOP</a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="videos.html"
+            class="nav-link active px-2 text-muted"
+            aria-current="page"
+            >VIDEOS</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link px-2 text-muted">CONTACT</a>
+        </li>
+      </ul>
     </footer>
 
     <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

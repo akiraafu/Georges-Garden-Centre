@@ -63,7 +63,7 @@
             >
             <a href="onlineshop.html" class="nav-link">SHOP</a>
             <a href="videos.html" class="nav-link">VIDEOS</a>
-            <a href="contact.html" class="nav-link">CONTACT US</a>
+            <a href="contact.html" class="nav-link">CONTACT</a>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@
         </button>
       </div>
     </div>
-    <div class="container m-5">
+    <div class="container my-5 ms-5">
       <section class="key-benefits">
         <div
           class="d-flex flex-column align-items-center justify-content-center"
@@ -193,7 +193,7 @@
       </section>
     </div>
     <section>
-      <div class="row g-1 feature-content my-5">
+      <div class="row g-0 feature-content my-5">
         <div class="col">
           <a href="onlineshop.html">
             <img src="./images/cat1.jpg" class="img-fluid"
@@ -222,30 +222,36 @@
     </section>
     <sectiion class="location">
       <div class="pb-5">
-        <div class="row g-5 d-flex align-items-center justify-content-center">
-          <div class="location-desc col text-end">
-            <h3>Don't miss our warehouse SALE!</h3>
-            <div>
-              <p>6000, Perth, WA</p>
+        <div class="container">
+          <div class="row g-5 d-flex align-items-center justify-content-center">
+            <div
+              class="col location-desc d-flex flex-column align-items-end justify-content-center"
+            >
+              <h3><b>Don't miss our WAREHOUSE SALE!</b></h3>
+              <div>
+                <p>Oats St, Kewdale WA 6105</p>
+              </div>
+              <div
+                class="d-flex flex-column align-items-end justify-content-center"
+              >
+                <h5><b>OPEN HOURS</b></h5>
+                <p>Mon - Fri : 9am - 5pm</p>
+                <p>Sat : 9am - 1pm</p>
+                <p>Sunday & Public holidays : Closed</p>
+              </div>
             </div>
-            <div>
-              <h5>Open hours</h5>
-              <p>Mon - Fri : 9am - 5pm</p>
-              <p>Sat : 9am - 1pm</p>
-              <p>Sunday & Public holidays : Closed</p>
+            <div class="col map">
+              <iframe
+                class="border border-4 rounded border-light-subtle"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13538.53100974828!2d115.92551923434428!3d-31.970858392620574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bbf736319151%3A0xf04f0b618f1ad60!2sTomato%20Lake!5e0!3m2!1sen!2sau!4v1678198059418!5m2!1sen!2sau"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-          </div>
-          <div class="col">
-            <iframe
-              class="border border-4 rounded border-dark-subtle"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13538.53100974828!2d115.92551923434428!3d-31.970858392620574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bbf736319151%3A0xf04f0b618f1ad60!2sTomato%20Lake!5e0!3m2!1sen!2sau!4v1678198059418!5m2!1sen!2sau"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
           </div>
         </div>
       </div>
@@ -257,7 +263,10 @@
           class="newsletter-text col d-flex flex-column justify-content-center align-items-center"
         >
           <h2>JOIN THE COMMUNITY!</h2>
-          <p>Join us and discover the beauty of gardening.</p>
+          <p>
+            Join us and discover
+            <em style="color: #bc4749">the beauty of gardening.</em>
+          </p>
         </div>
         <a href="contact.html" class="col me-5 pe-5 text-center">
           <button type="button" class="myBtn">Join today</button>
@@ -284,7 +293,12 @@
 
       <ul class="nav col-md-4 justify-content-end">
         <li class="nav-item">
-          <a href="index.html" class="nav-link px-2 text-muted">HOME</a>
+          <a
+            href="index.html"
+            class="nav-link active px-2 text-muted"
+            aria-current="page"
+            >HOME</a
+          >
         </li>
         <li class="nav-item">
           <a href="onlineshop.html" class="nav-link px-2 text-muted">SHOP</a>
@@ -293,12 +307,7 @@
           <a href="videos.html" class="nav-link px-2 text-muted">VIDEOS</a>
         </li>
         <li class="nav-item">
-          <a
-            href="contact.html"
-            class="nav-link active px-2 text-muted"
-            aria-current="page"
-            >CONTACT US</a
-          >
+          <a href="contact.html" class="nav-link px-2 text-muted">CONTACT</a>
         </li>
       </ul>
     </footer>
