@@ -140,3 +140,8 @@ nav {
 iframe {
   max-width: 100% !important;
 }
+
+.shop .col {
+  margin: auto;
+  padding-bottom: 25px;
+}
