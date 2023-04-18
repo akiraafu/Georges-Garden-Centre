@@ -4,28 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+
     <link rel="icon" type="image/png" href="./images/icon3.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
     <title>Georges Garden Centre</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+
+    <link rel="stylesheet" href="./css/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <nav
@@ -35,12 +20,12 @@
     >
       <div class="container-fluid">
         <a
-          href="/"
+          href="index.html"
           class="navbar-brand col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
         >
           <img
             style="max-width: 100px"
-            src="/images/georges-garden-centre-low-resolution-logo-color-on-transparent-background.png"
+            src="./images/georges-garden-centre-low-resolution-logo-color-on-transparent-background.png"
             alt="logo"
           />
         </a>
@@ -75,12 +60,13 @@
         </h2>
         <div class="col">
           <img
-            src="/images/georges-garden-centre-low-resolution-logo-color-on-transparent-background.png"
+            src="./images/georges-garden-centre-low-resolution-logo-color-on-transparent-background.png"
             alt="logo"
             width="200"
           />
         </div>
       </div>
+
       <div class="row mx-auto p-5">
         <div
           class="contact-info col align-items-start d-flex flex-column mx-auto"
@@ -88,8 +74,13 @@
         >
           <h2 class="fw-bold">Get in Touch</h2>
           <p class="mb-4">Bringing beauty to your backyard today</p>
+          <div>
+            <h5 class="fw-bold">Address</h5>
+            <p>Oats St, Kewdale WA 6105</p>
+          </div>
           <div class="contact-email mb-4">
             <h5 class="fw-bold">Email</h5>
+
             <a href="mailto:george@ggc.com">george@ggc.com</a>
           </div>
           <div class="contact-social mb-3">
@@ -100,64 +91,72 @@
           </div>
         </div>
 
-        <div
-          class="contact-form col border d-flex align-items-center justify-content-center mx-auto"
-        >
-          <form>
-            <div class="row g-2 my-3">
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                  aria-label="First name"
-                />
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Last name"
-                  aria-label="Last name"
-                />
-              </div>
-            </div>
-            <div>
+        <div class="col map">
+          <iframe
+            class="border border-4 rounded border-light-subtle"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13538.53100974828!2d115.92551923434428!3d-31.970858392620574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bbf736319151%3A0xf04f0b618f1ad60!2sTomato%20Lake!5e0!3m2!1sen!2sau!4v1678198059418!5m2!1sen!2sau"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="contact-form p-3 mx-auto" style="background-color: #dde5b6">
+        <form>
+          <div class="row g-2 my-3">
+            <div class="col">
               <input
-                type="email"
+                type="text"
                 class="form-control"
-                placeholder="Your Email Address"
+                placeholder="First name"
+                aria-label="First name"
               />
             </div>
-            <div>
-              <label for="categories" class="form-label"></label>
-              <div class="input-group">
-                <span class="input-group-text">Choose a category</span>
-                <select id="categories" name="categories" class="form-select">
-                  <option selected>Choose...</option>
-                  <option value="plants">Plants</option>
-                  <option value="pots">Pots</option>
-                  <option value="gifts">Gifts</option>
-                  <option value="gardenTools">Garden tools</option>
-                  <option value="fertilisers">Fertilisers</option>
-                </select>
-              </div>
-            </div>
-            <div class="mb-3">
-              <label
-                for="exampleFormControlTextarea1"
-                class="form-label"
-              ></label>
-              <textarea
-                id="exampleFormControlTextarea1"
+            <div class="col">
+              <input
+                type="text"
                 class="form-control"
-                placeholder="Message"
-                rows="3"
-              ></textarea>
+                placeholder="Last name"
+                aria-label="Last name"
+              />
             </div>
-            <button type="submit" class="myBtn mb-3">Submit</button>
-          </form>
-        </div>
+          </div>
+          <div>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Your Email Address"
+            />
+          </div>
+          <div>
+            <label for="categories" class="form-label"></label>
+            <div class="input-group">
+              <span class="input-group-text">Choose a category</span>
+              <select id="categories" name="categories" class="form-select">
+                <option selected>Choose...</option>
+                <option value="plants">Plants</option>
+                <option value="pots">Pots</option>
+                <option value="gifts">Gifts</option>
+                <option value="gardenTools">Garden tools</option>
+                <option value="fertilisers">Fertilisers</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea
+              id="exampleFormControlTextarea1"
+              class="form-control"
+              placeholder="Message"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="submit" class="myBtn mb-3">Submit</button>
+        </form>
       </div>
     </section>
     <footer
@@ -167,12 +166,12 @@
       <p class="col-md-4 mb-0 text-muted">© Georges Garden Centre, 2023.</p>
 
       <a
-        href="/"
+        href="index.html"
         class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
       >
         <img
           style="max-width: 100px"
-          src="/images/georges-garden-centre-low-resolution-logo-color-on-transparent-background.png"
+          src="./images/georges-garden-centre-low-resolution-logo-color-on-transparent-background.png"
           alt=""
         />
       </a>
@@ -198,10 +197,6 @@
       </ul>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
